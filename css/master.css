@@ -8,10 +8,21 @@ html, body {
 a {
   color: #006341;
 }
+section {
+  display: inline-block;
+  width: 100%;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+#col-1-2-wrapper {
+  width: 100%;
+  display: inline-flex;
+}
+#col-1-2-wrapper .col-1-2 {
+  width: 50%
 }
 header {
   border-bottom: 2px solid #006341;
@@ -35,13 +46,13 @@ header nav ul li {
   font-size: 20px;
   line-height: 20px;
   margin-right: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: right;
 }
 header nav ul li a {
   color: #006341;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
   transition: .2s ease;
 }
@@ -74,6 +85,36 @@ header nav ul li.icon {
       order: -1;
       display: initial;
   }
+}
+section#pre-footer {
+  background-color: #F2F2F2;
+  padding: 20px 0;
+}
+section#pre-footer h3 {
+  margin-top: 0;
+}
+section#pre-footer table#openingsuren {
+  width: 100%;
+  padding-right: 30px;
+}
+section#pre-footer table#openingsuren td {
+  /* padding: 10px 10px 0 0; */
+  padding: 5px 10px;
+}
+section#pre-footer table#openingsuren tr:first-child td {
+  //padding-top: 0px;
+}
+section#pre-footer table#openingsuren tr:nth-child(even) {
+  background-color: #ddd;
+}
+section#pre-footer ul#contactgegevens {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+section#pre-footer ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 footer {
   /* width: 100%; */
